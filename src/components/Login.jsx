@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Login = () => {
   const [loggedIn, setLoggedIn] = useState(false); 
   const clientId = '8abd809dfabd40bd819040ba4756cbf7';
-  const redirectUrl = 'http://localhost:3000/';
+  const redirectUrl = 'https://poetic-donut-b1304e.netlify.app/';
   const apiUrl = 'https://accounts.spotify.com/authorize';
   const scope = [
     'user-read-private',
