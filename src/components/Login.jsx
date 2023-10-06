@@ -18,7 +18,7 @@ const Login = () => {
   // Function to handle login
   const handleLogin = () => {
     setLoggedIn(true);
-    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scope.join(
+    window.location.href = `${apiUrl}?client_id=${"https://poetic-donut-b1304e.netlify.app/"}&redirect_uri=${redirectUrl}&scope=${scope.join(
       ' '
     )}&response_type=token&show_dialog=true`;
   };
