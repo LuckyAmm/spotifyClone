@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Login = () => {
   const [loggedIn, setLoggedIn] = useState(false); 
   const clientId = '8abd809dfabd40bd819040ba4756cbf7';
-  const redirectUrl = 'https://poetic-donut-b1304e.netlify.app/';
+  const redirectUrl = 'http://localhost:3000/';
   const apiUrl = 'https://accounts.spotify.com/authorize';
   const scope = [
     'user-read-private',
@@ -18,7 +18,7 @@ const Login = () => {
   // Function to handle login
   const handleLogin = () => {
     setLoggedIn(true);
-    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${"https://poetic-donut-b1304e.netlify.app/"}&scope=${scope.join(
+    window.location.href = `${apiUrl}?client_id=${clientId}&redirect_uri=${redirectUrl}&scope=${scope.join(
       ' '
     )}&response_type=token&show_dialog=true`;
   };
